@@ -1,0 +1,16 @@
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+bool isperfectsqr(int n){
+    int a=sqrt(n);
+    int s=a*a;
+if(s==n)
+return true;
+else return false;
+}
+bool checkMember(int n) {
+    if(isperfectsqr(5 * n * n + 4) ||isperfectsqr (5 * n * n - 4))
+    return true;
+    else 
+    return false;
+     }
